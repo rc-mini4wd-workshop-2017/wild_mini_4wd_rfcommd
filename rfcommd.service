@@ -1,0 +1,10 @@
+[Unit]
+Description=rfcomm daemon
+
+[Service]
+ExecStart=/usr/bin/rfcomm connect hci0 xx:xx:xx:xx:xx:xx 2
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
