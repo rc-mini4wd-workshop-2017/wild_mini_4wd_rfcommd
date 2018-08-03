@@ -1,5 +1,7 @@
 # wild_mini_4wd_rfcommd
 
+deplicated
+
 ## How to install
 
 ```
