@@ -1,5 +1,6 @@
 [Unit]
 Description=rfcomm bind daemon
+After=bluetooth.service
 
 [Service]
 ExecStart=/usr/bin/rfcomm bind hci0 xx:xx:xx:xx:xx:xx 2

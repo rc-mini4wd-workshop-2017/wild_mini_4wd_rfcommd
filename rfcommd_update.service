@@ -1,0 +1,12 @@
+[Unit]
+Description=Copy rfcommd.service
+ConditionPathExists=/boot/rfcommd.service
+Before=rfcommd.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/cp -f /boot/rfcommd.service /etc/systemd/system/
+
+[Install]
+WantedBy=multi-user.target
